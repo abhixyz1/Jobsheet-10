@@ -32,8 +32,7 @@ public class Bioskop20 {
         System.out.println(penonton.length);
 
         for (String[] barisPenonton : penonton) {
-            System.out.println("Panjang baris ke-" + barisPenonton.length);
-            
+            System.out.println("Panjang baris: " + barisPenonton.length);      
         }
     }
 }
