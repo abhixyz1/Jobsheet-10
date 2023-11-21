@@ -25,11 +25,12 @@ public class BioskopWithScanner20 {
                         System.out.println("Baris tidak tersedia");
                     }
 
-                    if (penonton[baris-1][kolom-1] != null){
-                        System.out.println("============= WARNING =============\nKursi sudah terisi oleh penonton lain, silahkan masukkan lagi !");
+                    if (penonton[baris - 1][kolom - 1] != null) {
+                        System.out.println(
+                                "============= WARNING =============\nKursi sudah terisi oleh penonton lain, silahkan masukkan lagi !");
                         continue;
                     }
-                    
+
                     penonton[baris - 1][kolom - 1] = nama;
 
                     System.out.print("input penonton lainnya? (y/n): ");
@@ -56,34 +57,6 @@ public class BioskopWithScanner20 {
                 break;
             }
         }
-        // System.out.print("Pilih Menu = \n1.Input data penonton\n2.Tampilkan daftar
-        // penonton\n3.Exit\nPilihan : ");
-        // int pilihmenu = sc.nextInt();
-        // if (pilihmenu == 1) {
-        // while (true) {
-        // System.out.print("Masukkan nama: ");
-        // nama = sc.next();
-        // System.out.print("Masukkan baris: ");
-        // baris = sc.nextInt();
-        // System.out.print("Masukkan kolom: ");
-        // kolom = sc.nextInt();
-        // sc.nextLine();
-
-        // penonton[baris - 1][kolom - 1] = nama;
-
-        // System.out.print("input penonton lainnya? (y/n): ");
-        // next = sc.nextLine();
-
-        // if (next.equalsIgnoreCase("n")) {
-        // break;
-        // }
-        // }
-
-        // } else if (pilihmenu == 2) {
-        // for (int i = 0; i < penonton.length; i++) {
-        // System.out.println(penonton[i]);
-        // }
-        // }
 
     }
 }
@@ -116,3 +89,32 @@ public class BioskopWithScanner20 {
 // System.out.println(penonton[2][0]);
 // System.out.println(penonton[2][1]);
 // System.out.println(penonton[3][1]);
+
+// System.out.print("Pilih Menu = \n1.Input data penonton\n2.Tampilkan daftar
+// penonton\n3.Exit\nPilihan : ");
+// int pilihmenu = sc.nextInt();
+// if (pilihmenu == 1) {
+// while (true) {
+// System.out.print("Masukkan nama: ");
+// nama = sc.next();
+// System.out.print("Masukkan baris: ");
+// baris = sc.nextInt();
+// System.out.print("Masukkan kolom: ");
+// kolom = sc.nextInt();
+// sc.nextLine();
+
+// penonton[baris - 1][kolom - 1] = nama;
+
+// System.out.print("input penonton lainnya? (y/n): ");
+// next = sc.nextLine();
+
+// if (next.equalsIgnoreCase("n")) {
+// break;
+// }
+// }
+
+// } else if (pilihmenu == 2) {
+// for (int i = 0; i < penonton.length; i++) {
+// System.out.println(penonton[i]);
+// }
+// }
