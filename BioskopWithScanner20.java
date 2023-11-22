@@ -23,12 +23,13 @@ public class BioskopWithScanner20 {
 
                     if (baris > 4 || kolom > 2) {
                         System.out.println("Baris tidak tersedia");
+                        continue;
                     }
 
                     if (penonton[baris - 1][kolom - 1] != null) {
-                        System.out.println(
-                                "============= WARNING =============\nKursi sudah terisi oleh penonton lain, silahkan masukkan lagi !");
+                        System.out.println( "============= WARNING =============\nKursi sudah terisi oleh penonton lain, silahkan masukkan lagi !");
                         continue;
+                   
                     }
 
                     penonton[baris - 1][kolom - 1] = nama;
@@ -50,14 +51,11 @@ public class BioskopWithScanner20 {
                         System.out.println("Penonton pada baris ke " + (j + 1) + " deret ke " + (j2 + 1) + " adalah "
                                 + penonton[j][j2]);
                     }
-
                 }
-
             } else if (pilihmenu == 3) {
                 break;
             }
         }
-
     }
 }
 // while (true) {
